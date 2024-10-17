@@ -64,7 +64,7 @@ export default function ProjectDetails({ projects, setProjects }) {
   const handleSubmit = async (e) => {
     try {
         e.preventDefault();
-        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/projects/`, {
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/projects/${params.id}`, {
             headers: {
                 'Content-Type': 'application/json'
             },
